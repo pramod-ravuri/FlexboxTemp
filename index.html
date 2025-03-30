@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Template</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-button">&#9776;</label>
+        <nav class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </header>
+
+      <main class="banner" id="home">
+        <img src="images/banner-2.png" alt="guitar" />
+        <div class="text">
+          <h3>Music</h3>
+          <p>It is most soothing to hear and melodious music</p>
+        </div>
+      </main>
+
+      <section id="about">
+        <h2>THE BAND</h2>
+        <i> We love music </i>
+        <div class="description">
+<p>
+    We have created a fictional band website. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est
+    laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.
+</p>
+        </div>
+        <div class="cards">
+          <div class="card-info">
+            <div class="name">Rain Forest</div>
+            <div class="image">
+              <img src="images/Forest1.jpg" alt="Pic1" />
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="name">Tropical Forest</div>
+            <div class="image">
+              <img src="images/Forest2.jpg" alt="Pic2" />
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="name">Mangrove Forest</div>
+            <div class="image">
+              <img src="images/Forest3.jpg" alt="Pic3" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <article id="tour">
+        <h2>Tour Dates</h2>
+        <em>Remember to book your tickets!</em>
+        <div class="ticket-status">
+          <div class="ticket-info">
+            <div>September</div>
+            <span>Sold out</span>
+          </div>
+          <div class="ticket-info">
+            <div>September</div>
+            <span>Sold out</span>
+          </div>
+          <div class="ticket-info">
+            <div>September</div>
+            <span class="number">3</span>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card card-one">
+            <img src="images/benefits-of-love.jpg" alt="" />
+            <h4>Morning</h4>
+            <p>Fri 10 Dec 2020</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="button">Buy Tickets</button>
+          </div>
+          <div class="card card-two">
+            <img src="images/LoverNight.jpg" alt="" />
+            <h4>Night</h4>
+            <p>Mon 22 Oct 2017</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="button">Buy Tickets</button>
+          </div>
+          <div class="card card-three">
+            <img src="images/Lovers.jpg" alt="" />
+            <h4>Evening</h4>
+            <p>Wed 11 Aug 2012</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button class="button">Buy Tickets</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="contact" id="contact">
+        <h2>Contact</h2>
+        <em>Fan? Drop a note!</em>
+        <div class="address-form">
+          <div class="address">
+            <div>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Chicago,US</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-phone"></i>
+              <p>Phone: +00 151515</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-envelope"></i>
+              <p>Email: mail@mail.com</p>
+            </div>
+          </div>
+          <div class="form">
+            <form>
+              <div class="name-details form-data">
+                <input type="text" id="name" placeholder="Name" />
+                <input type="text" id="email" placeholder="Email" />
+              </div>
+              <div class="form-data">
+                <input type="text" id="message" placeholder="Message" />
+              </div>
+              <div class="btn">
+                <input type="button" value="send" id="btn"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

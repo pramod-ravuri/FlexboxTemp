@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1.2rem;
+}
+
+header nav ul li:hover {
+    background-color: #f4f4f4;
+}
+
+header nav ul li:hover a {
+    color: black;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: black;
+}
+
+header .search-icon i {
+    color: white;
+    padding-right: 1.2rem;
+}
+
+header .search-icon i:hover {
+    background-color: red;
+    padding: 1.2rem;
+    border: 2px solid red;
+}
+
+.banner img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px;
+    /* Moves text to the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.text h3 {
+    margin-bottom: 1rem;
+}
+
+.text p {
+    margin-bottom: 1.4rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+section .cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+section h2,
+section i,
+article em,
+article h2,
+.contact h2,
+.contact em {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+section p {
+    margin-bottom: 3.5rem;
+    line-height: 1.6;
+    max-width: 670px;
+}
+
+section .cards .card-info {
+    text-align: center;
+}
+
+section .cards .card-info .name {
+    margin-bottom: 1rem;
+}
+
+section .cards .card-info .image img {
+    width: 9.3rem;
+    /* height: auto; */
+    height: 9.3rem;
+    border-radius: 10px;
+}
+
+.contact {
+    margin: 100px auto;
+    width: 50%;
+}
+
+article {
+    background-color: black;
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article h2,
+article em {
+    color: white;
+}
+
+article .ticket-status {
+    border: 1px solid black;
+    background-color: white;
+    max-width: 670px;
+    width: 100%;
+    margin: auto;
+}
+
+article .ticket-status .ticket-info {
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+}
+
+article .ticket-status .ticket-info span {
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+}
+
+article .ticket-status .ticket-info:first-child,
+article .ticket-status .ticket-info:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+article .ticket-status .ticket-info:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+article .ticket-status .ticket-info .number {
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+}
+
+article .cards .card img {
+    width: 100%;
+    height: 12rem;
+}
+
+article .cards {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+    max-width: 670px;
+    margin-top: 2rem;
+}
+
+article .card-one,
+article .card-two,
+article .card-three {
+    background-color: white;
+}
+
+article .card h4,
+article .card p {
+    padding: 0.5rem;
+}
+
+article .card button {
+    padding: 0.7rem;
+    width: 50%;
+    margin: 0 0 0.7rem 0.7rem;
+    background-color: black;
+    color: white;
+}
+
+.contact {
+    max-width: 670px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+.contact .address-form {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contact .address-form .address div {
+    display: flex;
+    gap: 20px;
+}
+
+.contact form {
+    outline: none;
+}
+
+.contact .address div {
+    margin-bottom: 0.5rem;
+}
+
+.contact .address-form .form div input {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact .address-form .form #message {
+    width: 100%;
+}
+
+.contact .btn {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.contact #btn {
+    padding: 8px 12px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+@media(min-width:310px) and (max-width:670px) {
+
+    /* Hide checkbox */
+    #menu-toggle {
+        display: none;
+    }
+
+    /* Menu button */
+    .menu-button {
+        font-size: 24px;
+        cursor: pointer;
+        background: #333;
+        color: white;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 5px;
+    }
+
+    /* Menu (hidden by default) */
+    .menu {
+        display: none;
+        background: #444;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Show menu when checkbox is checked */
+    #menu-toggle:checked~.menu {
+        display: block;
+    }
+
+    /* Menu links */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        padding: 10px;
+    }
+
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .banner .text {
+        display: none;
+    }
+
+    section .description {
+        margin: 0 2rem;
+    }
+
+    section .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    section .cards .card-info .image img {
+        height: auto;
+        width: 50%;
+        height: 25%;
+    }
+
+    article .ticket-status {
+        width: 85%;
+    }
+
+    article .cards {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-top: 2rem;
+    }
+
+    article img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .contact .address-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .contact form .name-details input {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media(min-width:671px) and (max-width:2400px)
+{
+    header #menu-toggle, header .menu-button{
+        display: none;
+    }
+}
